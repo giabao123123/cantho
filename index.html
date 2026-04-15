@@ -29,18 +29,15 @@
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
-
     <aside id="backToTop">
       <a href="#hero" aria-label="Lên đầu trang">
         <span class="arrow arrow-1"></span>
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-
     <aside class="box w3-right" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với tỉnh Cần Thơ!</p>
+      <p class="text">Chào mừng đến với thành phố Cần Thơ!</p>
     </aside>
-
     <header class="w3-top">
       <nav
         class="w3-bar w3-white w3-padding w3-card"
@@ -53,13 +50,6 @@
         <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
           ❯
         </button>
-        <button id="toggleBtn">▶ Phát nhạc</button>
-        <audio id="bgMusic">
-          <source
-            src="./New folder/BẮC-BLING-_BẮC-NINH_-OFFICIAL-MV-HOÀ-MINZY-ft-NS-XUÂN-HINH-x-MASEW-x-TUẤN-CRY.mp3"
-            type="audio/mp3"
-          />
-        </audio>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">☰</label>
         <ul
@@ -89,32 +79,6 @@
             <a href="https://giabao123123.github.io/trochoicantho/">TRÒ CHƠI</a>
           </li>
         </ul>
-
-        <script>
-          const menuLinks = document.querySelectorAll("#menu-list a");
-          const menuToggle = document.getElementById("menu-toggle");
-          menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-              if (window.innerWidth <= 768) {
-                menuToggle.checked = false;
-              }
-            });
-          });
-        </script>
-        <script>
-          const audio = document.getElementById("bgMusic");
-          const btn = document.getElementById("toggleBtn");
-          btn.addEventListener("click", () => {
-            if (audio.paused) {
-              audio.play();
-              btn.textContent = "⏸ Tắt nhạc";
-            } else {
-              audio.pause();
-              btn.textContent = "▶ Phát nhạc";
-            }
-          });
-        </script>
-
         <nav
           style="
             background: linear-gradient(180deg, #ff9800, #ff5722);
@@ -154,21 +118,7 @@
           </section>
         </nav>
       </nav>
-
-      <script>
-        const menuScroll = document.querySelector(".menu-scroll");
-        const btnLeft = document.querySelector(".left-btn");
-        const btnRight = document.querySelector(".right-btn");
-        const step = 200;
-        btnRight.addEventListener("click", () => {
-          menuScroll.scrollLeft += step;
-        });
-        btnLeft.addEventListener("click", () => {
-          menuScroll.scrollLeft -= step;
-        });
-      </script>
     </header>
-
     <main class="w3-content" style="max-width: 1100px">
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <header>
@@ -233,24 +183,30 @@
             Long.
           </p>
           <p style="font-size: 15px" class="w3-col">
-            (nguồn thông tin:
-            https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1)
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1"
+              target="_blank"
+              >Wikipedia - Cần Thơ</a
+            >)
           </p>
         </article>
-
         <figure class="w3-center">
           <img
             src="https://cdn2.tuoitre.vn/471584752817336320/2025/4/11/base64-17443806900561475777003.jpeg"
             alt=""
           />
           <figcaption style="font-size: 15px">
-            (nguồn hình
-            ảnh:https://tuoitre.vn/thong-tin-lo-trinh-sap-nhap-can-tho-soc-trang-hau-giang-20250411202934165.html)
+            (Nguồn hình ảnh:
+            <a
+              href="https://tuoitre.vn/thong-tin-lo-trinh-sap-nhap-can-tho-soc-trang-hau-giang-20250411202934165.html"
+              target="_blank"
+              >Tuổi Trẻ Online - Lộ trình sáp nhập</a
+            >)
           </figcaption>
         </figure>
       </section>
       <hr />
-
       <section class="w3-row-padding w3-padding-16" id="menu">
         <header>
           <h1 class="w3-padding-16" style="color: red; font-size: 50px">
@@ -270,7 +226,6 @@
             <br />
             <b>-Điểm cực của tỉnh:</b>
           </p>
-
           <ul>
             <li>
               <p>
@@ -302,10 +257,14 @@
             <li><p>Phía bắc giáp tỉnh Đồng Tháp và tỉnh An Giang.</p></li>
           </ul>
           <p style="font-size: 15px">
-            (nguồn thông tin:https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1)
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1"
+              target="_blank"
+              >Wikipedia - Cần Thơ</a
+            >)
           </p>
         </article>
-
         <figure class="w3-center">
           <img
             src="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/NDBT/240925/ban-do-tp-can-tho-sau-sap-nhap.jpg"
@@ -315,13 +274,16 @@
           />
           <span class="text-overlay"></span>
           <figcaption style="font-size: 15px">
-            (nguồn hình
-            ảnh:https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/ban-do-tp-can-tho-sau-sap-nhap-moi-nhat-2025-ra-sao-xem-ban-do-can-tho-sau-sap-nhap-o-dau-419189-234251.html)
+            (Nguồn hình ảnh:
+            <a
+              href="https://thuvienphapluat.vn/phap-luat/ho-tro-phap-luat/ban-do-tp-can-tho-sau-sap-nhap-moi-nhat-2025-ra-sao-xem-ban-do-can-tho-sau-sap-nhap-o-dau-419189-234251.html"
+              target="_blank"
+              >Thư Viện Pháp Luật - Bản đồ Cần Thơ sau sáp nhập</a
+            >)
           </figcaption>
         </figure>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DIEUKIENTUNHIEN">
         <header>
           <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
@@ -333,7 +295,6 @@
             tích <u>Holocen</u> (phù sa mới) và <u>Pleistocene</u> (phù sa cổ) ở
             độ sâu khoảng <u>50 mét</u>.
           </p>
-
           <p>
             <strong><mark>-Địa hình:</mark></strong> Thành phố tương đối bằng
             phẳng, cao trung bình <u>1–2 mét</u>, dốc nhẹ từ đông bắc xuống tây
@@ -341,14 +302,12 @@
             và cù lao như <u>Cồn Ấu</u>, <u>Cồn Khương</u>, <u>Cồn Sơn</u>,
             <u>Cù lao Tân Lập</u>, <u>Cù Lao Dung</u>.
           </p>
-
           <p>
             <strong><mark>-Mạng lưới sông, kênh rạch:</mark></strong> Hơn
             <u>158 sông rạch</u> lớn nhỏ, nổi bật là <u>sông Hậu</u>,
             <u>sông Cần Thơ</u>, <u>sông Cái Lớn</u>, <u>sông Bình Thủy</u>,
             thuận lợi cho tưới tiêu và giao thông thủy.
           </p>
-
           <p>
             <strong><mark>-Khí hậu:</mark></strong> Cần Thơ thuộc khí hậu nhiệt
             đới gió mùa, quanh năm nóng ẩm, ít bão. Mùa mưa từ
@@ -357,7 +316,6 @@
             <u>28°C</u>, lượng mưa trung bình <u>2000 mm</u>, độ ẩm trung bình
             <u>82–87%</u> và số giờ nắng trung bình <u>2.249 giờ/năm</u>.
           </p>
-
           <p>
             <strong><mark>-Ảnh hưởng:</mark></strong> Điều kiện tự nhiên thuận
             lợi cho phát triển nông nghiệp nhiệt đới đa dạng. Tuy nhiên, mùa mưa
@@ -367,11 +325,15 @@
           </p>
         </article>
         <p style="font-size: 15px">
-          (nguồn thông tin: https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1)
+          (Nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1"
+            target="_blank"
+            >Wikipedia - Cần Thơ</a
+          >)
         </p>
       </section>
       <hr />
-
       <section
         class="w3-container w3-padding-16 table-responsive"
         style="overflow-x: auto"
@@ -391,7 +353,7 @@
           <tbody>
             <tr>
               <th colspan="14" style="font-size: x-large">
-                Dữ liệu khí hậu của Cần Thơ
+                Dữ liệu khí hậu của An Giang
               </th>
             </tr>
             <tr>
@@ -703,7 +665,12 @@
           </tbody>
         </table>
         <p style="font-size: 15px">
-          (nguồn thông tin:https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1)
+          (Nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1"
+            target="_blank"
+            >Wikipedia - Cần Thơ</a
+          >)
         </p>
       </section>
       <hr />
@@ -711,6 +678,10 @@
         <h1 class="w3-padding-16" style="color: red; font-size: 50px">
           DỰ BÁO THỜI TIẾT TRONG TỈNH
         </h1>
+        <p>
+          ⚠️ Dữ liệu thời tiết hiện vẫn theo đơn vị hành chính cũ — chưa cập
+          nhật sau sáp nhập tỉnh.
+        </p>
         <div
           style="
             max-width: 760px;
@@ -734,7 +705,6 @@
           >
             Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
           </p>
-
           <div
             style="position: relative; max-width: 440px; margin: 0 auto 22px"
           >
@@ -787,7 +757,6 @@
               "
             ></div>
           </div>
-
           <div
             id="tt-box"
             style="
@@ -824,116 +793,112 @@
             </div>
           </div>
         </div>
-
         <script>
           var TT_AREAS = [
             {
               name: "Huyện Cờ Đỏ",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/co-do?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/co-do?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Phong Điền",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/phong-dien-can-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/phong-dien-can-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thới Lai",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/thoi-lai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/thoi-lai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Vĩnh Thạnh",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/vinh-thanh-can-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/vinh-thanh-can-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Thốt Nốt",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/thot-not?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/thot-not?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Bình Thủy",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/binh-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/binh-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Cái Răng",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/cai-rang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/cai-rang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Ninh Kiều",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/ninh-kieu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/ninh-kieu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Ô Môn",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/can-tho/o-mon?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/o-mon?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
-
             {
               name: "Thành phố Vị Thanh",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Ngã Bảy",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/nga-bay?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/nga-bay?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Long Mỹ",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/tx-long-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/tx-long-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Châu Thành	(Hậu Giang cũ)",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-hau-giang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-hau-giang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Châu Thành A	",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-a?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-a?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Long Mỹ",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/long-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/long-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Phụng Hiệp",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/phung-hiep?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/phung-hiep?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Vị Thủy",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
-
             {
               name: "Thành phố Sóc Trăng",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/soc-trang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/soc-trang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Vĩnh Châu",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/vinh-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/vinh-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Ngã Năm",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/nga-nam?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/nga-nam?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Châu Thành (Sóc Trăng cũ)",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!-- Begin thoitiet.app widget -->
-<iframe 
+              widget: `<iframe 
   src="https://thoitiet247.vn/widget/embed/soc-trang/chau-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" 
   id="widgeturl" 
   width="100%" 
@@ -943,42 +908,42 @@
   allowtransparency="true" 
   style="border:none;overflow:hidden;">
 </iframe>
-<!-- End thoitiet.app widget -->`,
+`,
             },
             {
               name: "Huyện Cù Lao Dung",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/cu-lao-dung?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/cu-lao-dung?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Kế Sách",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/ke-sach?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/ke-sach?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Long Phú",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/long-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/long-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mỹ Tú",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-tu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-tu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mỹ Xuyên",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-xuyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-xuyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thạnh Trị",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/thanh-tri-soc-trang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/thanh-tri-soc-trang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Trần Đề",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/soc-trang/tran-de?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/tran-de?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
           function ttNorm(s) {
@@ -988,9 +953,7 @@
               .replace(/[\u0300-\u036f]/g, "")
               .replace(/đ/g, "d");
           }
-
           var ttFiltered = TT_AREAS.slice();
-
           function ttFilter() {
             var q = ttNorm(document.getElementById("tt-input").value.trim());
             ttFiltered = q
@@ -1001,13 +964,11 @@
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttShow() {
             ttFiltered = TT_AREAS.slice();
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttRender() {
             var dd = document.getElementById("tt-drop");
             if (!ttFiltered.length) {
@@ -1038,7 +999,6 @@
               })
               .join("");
           }
-
           function ttSelect(idx) {
             var a = TT_AREAS[idx];
             document.getElementById("tt-input").value = a.name;
@@ -1047,13 +1007,10 @@
             if (a.parent) {
               locationTitle += " (" + a.parent + ")";
             }
-
             document.getElementById("tt-name").textContent = locationTitle;
             document.getElementById("tt-box").style.display = "block";
-
             var wrap = document.getElementById("tt-widget-wrap");
             var noEmbed = document.getElementById("tt-noembed");
-
             if (a.widget && a.widget.trim()) {
               wrap.innerHTML = a.widget;
               wrap.style.display = "block";
@@ -1063,18 +1020,40 @@
               wrap.style.display = "none";
               noEmbed.style.display = "block";
             }
-
             document
               .getElementById("tt-box")
               .scrollIntoView({ behavior: "smooth", block: "start" });
           }
-
           document.addEventListener("click", function (e) {
             var inp = document.getElementById("tt-input");
             var drop = document.getElementById("tt-drop");
             if (drop && e.target !== inp && !drop.contains(e.target))
               drop.style.display = "none";
           });
+          const menuScroll = document.querySelector(".menu-scroll");
+          const btnLeft = document.querySelector(".left-btn");
+          const btnRight = document.querySelector(".right-btn");
+          const step = 200;
+          btnRight.addEventListener("click", () => {
+            menuScroll.scrollLeft += step;
+          });
+          btnLeft.addEventListener("click", () => {
+            menuScroll.scrollLeft -= step;
+          });
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+          const paragraphs = document.querySelectorAll("summary");
+          paragraphs.forEach((p) => p.classList.add("ccc"));
+          function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("w3-hide");
+          }
         </script>
       </section>
       <hr />
@@ -1254,14 +1233,26 @@
             <u>59,56 triệu VNĐ/năm</u>, xếp thứ <u>13</u>.
           </p>
           <p style="font-size: 15px">
-            (nguồn thông tin: https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1
-            <br />https://www.lytuong.net/thong-ke-dan-so-can-tho <br />
-            https://danso.info/dan-so-can-tho/ )
+            (Nguồn thông tin: <br />
+            <a
+              href="https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1"
+              target="_blank"
+              >Wikipedia - Cần Thơ</a
+            >
+            <br />
+            <a
+              href="https://www.lytuong.net/thong-ke-dan-so-can-tho"
+              target="_blank"
+              >Lý Tưởng - Thống kê dân số</a
+            >
+            <br />
+            <a href="https://danso.info/dan-so-can-tho/" target="_blank"
+              >Dân Số Info - Cần Thơ</a
+            >)
           </p>
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="VANHOA">
         <header>
           <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
@@ -1281,7 +1272,6 @@
             nhiều, chủ yếu sống quanh các chùa hoặc xen kẽ với người Việt ở các
             quận Ninh Kiều, Ô Môn, Thốt Nốt.
           </p>
-
           <p>
             <mark><strong>Văn hóa Cần Thơ:</strong></mark
             ><br />
@@ -1291,7 +1281,6 @@
             huê tình, hò cấy, hò mái dài, xuất phát từ cầu hò của khách thương
             hồ.
           </p>
-
           <p>
             <mark
               ><strong>Biệt danh Tây Đô và những nét đặc trưng:</strong></mark
@@ -1305,7 +1294,6 @@
             tiếng như <u>Châu Văn Liêm</u> và <u>Út Trà Ôn</u>. Về tín ngưỡng và
             sinh hoạt lễ hội, các ngôi đình ở Cần Thơ tương tự các đình Nam Bộ.
           </p>
-
           <h2 style="font-size: 40px">
             <strong><mark>LỄ HỘI:</mark></strong>
           </h2>
@@ -1344,11 +1332,11 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px">
-                    (nguồn:
+                    (Nguồn:
                     <a
                       href="https://vinpearl.com/vi/le-hoi-can-tho-7-hoat-dong-lon-va-an-tuong-nhat-trong-nam"
                       target="_blank"
-                      >Vinpearl</a
+                      >Vinpearl - Lễ hội Cần Thơ</a
                     >)
                   </figcaption>
                 </figure>
@@ -1382,11 +1370,11 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px">
-                    (nguồn:
+                    (Nguồn:
                     <a
                       href="https://vinpearl.com/vi/le-hoi-can-tho-7-hoat-dong-lon-va-an-tuong-nhat-trong-nam"
                       target="_blank"
-                      >Vinpearl</a
+                      >Vinpearl - Lễ hội Cần Thơ</a
                     >)
                   </figcaption>
                 </figure>
@@ -1412,11 +1400,11 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px">
-                    (nguồn:
+                    (Nguồn:
                     <a
                       href="https://vinpearl.com/vi/le-hoi-can-tho-7-hoat-dong-lon-va-an-tuong-nhat-trong-nam"
                       target="_blank"
-                      >Vinpearl</a
+                      >Vinpearl - Lễ hội Cần Thơ</a
                     >)
                   </figcaption>
                 </figure>
@@ -1442,11 +1430,11 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px">
-                    (nguồn:
+                    (Nguồn:
                     <a
                       href="https://vinpearl.com/vi/le-hoi-can-tho-7-hoat-dong-lon-va-an-tuong-nhat-trong-nam"
                       target="_blank"
-                      >Vinpearl</a
+                      >Vinpearl - Lễ hội Cần Thơ</a
                     >)
                   </figcaption>
                 </figure>
@@ -1477,11 +1465,11 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px">
-                    (nguồn:
+                    (Nguồn:
                     <a
                       href="https://vinpearl.com/vi/le-hoi-can-tho-7-hoat-dong-lon-va-an-tuong-nhat-trong-nam"
                       target="_blank"
-                      >Vinpearl</a
+                      >Vinpearl - Lễ hội Cần Thơ</a
                     >)
                   </figcaption>
                 </figure>
@@ -1507,11 +1495,11 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px">
-                    (nguồn:
+                    (Nguồn:
                     <a
                       href="https://vinpearl.com/vi/le-hoi-can-tho-7-hoat-dong-lon-va-an-tuong-nhat-trong-nam"
                       target="_blank"
-                      >Vinpearl</a
+                      >Vinpearl - Lễ hội Cần Thơ</a
                     >)
                   </figcaption>
                 </figure>
@@ -1537,11 +1525,11 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px">
-                    (nguồn:
+                    (Nguồn:
                     <a
                       href="https://vinpearl.com/vi/le-hoi-can-tho-7-hoat-dong-lon-va-an-tuong-nhat-trong-nam"
                       target="_blank"
-                      >Vinpearl</a
+                      >Vinpearl - Lễ hội Cần Thơ</a
                     >)
                   </figcaption>
                 </figure>
@@ -1551,7 +1539,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DITICH">
         <header>
           <h1 class="w3-center" style="font-size: 50px">
@@ -1586,8 +1573,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1605,8 +1596,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1623,8 +1618,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1641,8 +1640,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1659,8 +1662,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1677,8 +1684,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1696,8 +1707,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1714,8 +1729,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1733,8 +1752,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1751,8 +1774,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1770,8 +1797,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1789,8 +1820,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://vnanet.vn/vi/anh/anh-thoi-su-trong-nuoc-1014/can-tho-gioi-thieu-di-tich-lich-su-dia-diem-thanh-lap-chi-bo-an-nam-cong-san-dang-co-do-tren-nen-tang-so-6646554.html)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vnanet.vn/vi/anh/anh-thoi-su-trong-nuoc-1014/can-tho-gioi-thieu-di-tich-lich-su-dia-diem-thanh-lap-chi-bo-an-nam-cong-san-dang-co-do-tren-nen-tang-so-6646554.html"
+                      target="_blank"
+                      >VNA Net</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1808,8 +1843,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1826,8 +1865,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/can-tho/bat-mi-15-diem-di-tich-lich-su-tai-can-tho-doc-dao-khong-the-bo-qua"
+                      target="_blank"
+                      >Travel Việt - Di tích Cần Thơ</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1845,8 +1888,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1863,8 +1910,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1881,8 +1932,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1899,8 +1954,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1917,8 +1976,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1936,8 +1999,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1954,8 +2021,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1973,8 +2044,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/hau-giang/top-11-di-tich-lich-su-hau-giang-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >Travel Việt - Di tích Hậu Giang</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -1991,8 +2066,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat"
+                      target="_blank"
+                      >Travel Việt - Di tích Sóc Trăng</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2009,8 +2088,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat"
+                      target="_blank"
+                      >Travel Việt - Di tích Sóc Trăng</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2027,8 +2110,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat"
+                      target="_blank"
+                      >Travel Việt - Di tích Sóc Trăng</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2045,8 +2132,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình
-                    ảnh:https://timkiemduongdi.com/dia-diem/den-tho-chu-tich-ho-chi-minh-cu-lao-dung-soc-trang)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://timkiemduongdi.com/dia-diem/den-tho-chu-tich-ho-chi-minh-cu-lao-dung-soc-trang"
+                      target="_blank"
+                      >Tìm Kiếm Đường Đi</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2063,8 +2154,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat"
+                      target="_blank"
+                      >Travel Việt - Di tích Sóc Trăng</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2081,8 +2176,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat"
+                      target="_blank"
+                      >Travel Việt - Di tích Sóc Trăng</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2099,8 +2198,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat"
+                      target="_blank"
+                      >Travel Việt - Di tích Sóc Trăng</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2118,8 +2221,12 @@
                     alt=""
                   />
                   <figcaption style="font-size: 15px" class="w3-animate-left">
-                    (nguồn thông tin và hình ảnh:
-                    https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat)
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/soc-trang/top-11-di-tich-lich-su-o-soc-trang-noi-tieng-duoc-cap-nhat-moi-nhat"
+                      target="_blank"
+                      >Travel Việt - Di tích Sóc Trăng</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2143,9 +2250,12 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD
-                    )
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD"
+                      target="_blank"
+                      >Báo Cần Thơ - Di sản VH phi vật thể</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2159,9 +2269,12 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD
-                    )
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD"
+                      target="_blank"
+                      >Báo Cần Thơ - Di sản VH phi vật thể</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2175,9 +2288,12 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD
-                    )
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD"
+                      target="_blank"
+                      >Báo Cần Thơ - Di sản VH phi vật thể</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2191,9 +2307,12 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD
-                    )
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD"
+                      target="_blank"
+                      >Báo Cần Thơ - Di sản VH phi vật thể</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2207,9 +2326,12 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD
-                    )
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD"
+                      target="_blank"
+                      >Báo Cần Thơ - Di sản VH phi vật thể</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2223,9 +2345,12 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD
-                    )
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baocantho.com.vn/di-san-van-hoa-phi-vat-the-quoc-gia-o-tp-can-tho-a166824.html#:~:text=Hi%E1%BB%87n%20nay%2C%20TP%20C%E1%BA%A7n%20Th%C6%A1%20c%C3%B3%2038%20di,s%E1%BA%AFc%20%E1%BB%9F%20C%E1%BA%A7n%20Th%C6%A1.%20%C3%90%E1%BB%9Dn%20ca%20t%C3%A0i%20t%E1%BB%AD"
+                      target="_blank"
+                      >Báo Cần Thơ - Di sản VH phi vật thể</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2239,10 +2364,18 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />https://dulich.laodong.vn/kham-pha/chiec-ghe-ngo-trong-doi-song-van-hoa-khmer-nam-bo-1110098.html
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >
+                    <br />
+                    <a
+                      href="https://dulich.laodong.vn/kham-pha/chiec-ghe-ngo-trong-doi-song-van-hoa-khmer-nam-bo-1110098.html"
+                      target="_blank"
+                      >Báo Lao Động - Đua ghe ngo</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2256,10 +2389,18 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />http://lehoivietnam.com.vn/bai-viet/le-hoi-nghinh-ong-o-soc-trang-495
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >
+                    <br />
+                    <a
+                      href="http://lehoivietnam.com.vn/bai-viet/le-hoi-nghinh-ong-o-soc-trang-495"
+                      target="_blank"
+                      >Lễ Hội Việt Nam</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2273,10 +2414,18 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />https://baoquocte.vn/hat-aday-cua-nguoi-khmer-tro-thanh-di-san-van-hoa-phi-vat-the-quoc-gia-180909.html
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >
+                    <br />
+                    <a
+                      href="https://baoquocte.vn/hat-aday-cua-nguoi-khmer-tro-thanh-di-san-van-hoa-phi-vat-the-quoc-gia-180909.html"
+                      target="_blank"
+                      >Báo Quốc Tế - Hát Aday</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2290,10 +2439,12 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2307,10 +2458,18 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />https://vovworld.vn/vi-VN/chuyen-cua-lang/nghe-lam-banh-pia-truyen-thong-o-soc-trang-768004.vov
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >
+                    <br />
+                    <a
+                      href="https://vovworld.vn/vi-VN/chuyen-cua-lang/nghe-lam-banh-pia-truyen-thong-o-soc-trang-768004.vov"
+                      target="_blank"
+                      >VOV World - Nghề làm bánh pía</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2324,10 +2483,18 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />https://mientay.giadinhonline.vn/ro-bam-nghe-thuat-san-khau-doc-dao-cua-nguoi-khmer-d9920.html
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >
+                    <br />
+                    <a
+                      href="https://mientay.giadinhonline.vn/ro-bam-nghe-thuat-san-khau-doc-dao-cua-nguoi-khmer-d9920.html"
+                      target="_blank"
+                      >Gia Đình Online - Nghệ thuật Rô-băm</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2341,10 +2508,18 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />https://www.tvu.edu.vn/the-he-tre-giu-lua-nghe-thuat-san-khau-du-ke-khmer-nam-bo/
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >
+                    <br />
+                    <a
+                      href="https://www.tvu.edu.vn/the-he-tre-giu-lua-nghe-thuat-san-khau-du-ke-khmer-nam-bo/"
+                      target="_blank"
+                      >ĐH Trà Vinh (TVU) - Sân khấu dù kê</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2358,10 +2533,18 @@
                     alt=""
                   />
                   <figcaption>
-                    (nguồn thông tin và hình
-                    ảnh:https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)
-                    <br />https://vov.vn/van-hoa/ky-luc-trinh-dien-nhac-ngu-am-cua-nguoi-khmer-co-quy-mo-lon-nhat-viet-nam-post1135324.vov
-                    )
+                    (Nguồn thông tin và hình ảnh: <br />
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_Di_s%E1%BA%A3n_v%C4%83n_h%C3%B3a_phi_v%E1%BA%ADt_th%E1%BB%83_qu%E1%BB%91c_gia_(Vi%E1%BB%87t_Nam)"
+                      target="_blank"
+                      >Wikipedia - DS Di sản VH phi vật thể VN</a
+                    >
+                    <br />
+                    <a
+                      href="https://vov.vn/van-hoa/ky-luc-trinh-dien-nhac-ngu-am-cua-nguoi-khmer-co-quy-mo-lon-nhat-viet-nam-post1135324.vov"
+                      target="_blank"
+                      >VOV - Kỷ lục nhạc ngũ âm</a
+                    >)
                   </figcaption>
                 </figure>
               </li>
@@ -2370,7 +2553,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="GIAODUC">
         <header>
           <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
@@ -2391,7 +2573,6 @@
             <u>Viện lúa Đồng bằng sông Cửu Long</u>, trực thuộc Viện Khoa học
             Nông nghiệp Việt Nam, chuyên nghiên cứu và đào tạo.
           </p>
-
           <p>
             <mark><strong>Năm học 2019 – 2020:</strong></mark>
             Tỷ lệ học sinh đạt chuẩn tuyển sinh là <u>100% lớp 1</u> và
@@ -2401,7 +2582,6 @@
             tế xã, tỷ lệ bác sĩ đạt <u>14,96 bác sĩ/vạn dân</u>. Thành phố cũng
             chú trọng phát triển văn hóa, văn nghệ, thể dục và thể thao.
           </p>
-
           <details>
             <summary
               class="w3-bar-item w3-button w3-padding"
@@ -2426,7 +2606,6 @@
               <li>Học viện Phật giáo Nam tông Khmer</li>
             </ol>
           </details>
-
           <details>
             <summary
               class="w3-bar-item w3-button w3-padding"
@@ -2452,7 +2631,6 @@
               <li>Trường Cao đẳng Cộng đồng Sóc Trăng</li>
             </ol>
           </details>
-
           <details>
             <summary
               class="w3-bar-item w3-button w3-padding"
@@ -2476,12 +2654,16 @@
             </ol>
           </details>
           <p style="font-size: 15px">
-            (nguồn thông tin:https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1)
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1"
+              target="_blank"
+              >Wikipedia - Cần Thơ</a
+            >)
           </p>
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="KINHTE">
         <br />
         <header>
@@ -2513,7 +2695,6 @@
             thủy sản chủ yếu là nuôi trồng.
           </p>
         </article>
-
         <figure class="chart-container" style="width: 80%; margin: auto">
           <figcaption>
             <h2 style="text-align: center">Biểu đồ GRDP Cần Thơ 2010–2015</h2>
@@ -2576,12 +2757,15 @@
           (Số liệu năm 2010,2012,2013,2014 là ước tính.)
         </p>
         <p style="font-size: 15px">
-          (nguồn thông tin:
-          https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1#Kinh_t%E1%BA%BF)
+          (Nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/C%E1%BA%A7n_Th%C6%A1#Kinh_t%E1%BA%BF"
+            target="_blank"
+            >Wikipedia - Kinh tế Cần Thơ</a
+          >)
         </p>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="AMTHUC">
         <header>
           <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
@@ -2615,8 +2799,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html"
+                    target="_blank"
+                    >Kiến Thức Net - Food tour Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2647,8 +2835,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html"
+                    target="_blank"
+                    >Kiến Thức Net - Food tour Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2679,8 +2871,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html"
+                    target="_blank"
+                    >Kiến Thức Net - Food tour Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2713,8 +2909,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://kienthuc.net.vn/kham-pha-can-tho-qua-food-tour-dac-san-ba-tinh-sap-nhap-post1552407.html"
+                    target="_blank"
+                    >Kiến Thức Net - Food tour Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2753,8 +2953,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2785,8 +2989,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2821,8 +3029,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2856,8 +3068,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2890,8 +3106,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2927,8 +3147,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -2961,8 +3185,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -3000,8 +3228,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -3037,8 +3269,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -3074,8 +3310,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -3110,8 +3350,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -3146,8 +3390,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -3185,8 +3433,12 @@
                   alt="bu"
                 /><br />
                 <figcaption style="font-size: smaller">
-                  (Nguồn thông tin và hình
-                  ảnh:https://nucuoimekong.com/dac-san-can-tho)
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://nucuoimekong.com/dac-san-can-tho"
+                    target="_blank"
+                    >Nụ Cười Mekong - Đặc sản Cần Thơ</a
+                  >)
                 </figcaption>
               </figure>
             </details>
@@ -3194,11 +3446,6 @@
         </ol>
       </section>
       <hr />
-      <script>
-        const paragraphs = document.querySelectorAll("summary");
-        paragraphs.forEach((p) => p.classList.add("ccc"));
-      </script>
-
       <section class="w3-row w3-padding-16" id="DULICH">
         <header>
           <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
@@ -3252,13 +3499,12 @@
                   <a
                     href="https://www.ivivu.com/blog/2025/09/kham-pha-5-diem-du-lich-can-tho-sau-sap-nhap-day-hap-dan/"
                     target="_blank"
-                    >ivivu.com</a
+                    >iVIVU - Du lịch Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3303,13 +3549,12 @@
                   <a
                     href="https://www.ivivu.com/blog/2025/09/kham-pha-5-diem-du-lich-can-tho-sau-sap-nhap-day-hap-dan/"
                     target="_blank"
-                    >ivivu.com</a
+                    >iVIVU - Du lịch Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3353,13 +3598,12 @@
                   <a
                     href="https://www.ivivu.com/blog/2025/09/kham-pha-5-diem-du-lich-can-tho-sau-sap-nhap-day-hap-dan/"
                     target="_blank"
-                    >ivivu.com</a
+                    >iVIVU - Du lịch Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3409,13 +3653,12 @@
                   <a
                     href="https://www.ivivu.com/blog/2025/09/kham-pha-5-diem-du-lich-can-tho-sau-sap-nhap-day-hap-dan/"
                     target="_blank"
-                    >ivivu.com</a
+                    >iVIVU - Du lịch Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3463,13 +3706,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3514,13 +3756,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3562,13 +3803,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3610,13 +3850,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3658,13 +3897,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3706,13 +3944,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3759,13 +3996,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3815,13 +4051,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3865,13 +4100,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3914,13 +4148,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3962,13 +4195,12 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
             </details>
           </li>
-
           <li>
             <details>
               <summary class="w3-bar-item w3-button w3-padding summary">
@@ -4008,7 +4240,7 @@
                   <a
                     href="https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/du-lich-can-tho-sau-sap-nhap-kham-pha-nhung-diem-den-dac-sac.html"
                     target="_blank"
-                    >thamhiemmekong.com</a
+                    >Thám Hiểm Mekong - Điểm đến Cần Thơ</a
                   >)
                 </figcaption>
               </figure>
@@ -4017,7 +4249,6 @@
         </ol>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="tiemnang">
         <header>
           <h1 class="w3-center" style="font-size: 50px">
@@ -4032,7 +4263,6 @@
             không giáp biển, ảnh hưởng đến khả năng xuất khẩu và hội nhập kinh
             tế quốc tế.
           </p>
-
           <p>
             <mark><strong>- Sau sáp nhập:</strong></mark> Cần Thơ sở hữu hơn
             <u>72 km đường bờ biển</u> thuộc tỉnh Sóc Trăng, trải dài từ Trần Đề
@@ -4041,7 +4271,6 @@
             biển, thủy sản, năng lượng tái tạo, du lịch và khu công nghiệp ven
             biển.
           </p>
-
           <p>
             Dự án <mark><strong>Cảng biển nước sâu Trần Đề</strong></mark> là
             tâm điểm phát triển kinh tế biển: cầu cảng dài <u>5,3 km</u>, kè
@@ -4053,7 +4282,6 @@
             cảng chiến lược khu vực phía Nam, phục vụ xuất khẩu nông thủy sản
             toàn vùng.
           </p>
-
           <p>
             Phát triển cảng sẽ kéo theo hệ thống
             <mark
@@ -4064,7 +4292,6 @@
             dịch vụ hậu cần, tạo việc làm cho hàng trăm nghìn lao động và động
             lực tăng trưởng kinh tế lâu dài.
           </p>
-
           <p>
             <mark><strong>- Hạ tầng giao thông và logistics:</strong></mark> sau
             sáp nhập, mạng lưới Cần Thơ – Hậu Giang – Sóc Trăng được kết nối
@@ -4074,7 +4301,6 @@
             nâng cao sức cạnh tranh. Hệ thống sông ngòi, kênh rạch được khai
             thác để vận tải đa phương thức (đường bộ, thủy, biển) hiệu quả.
           </p>
-
           <p>
             <mark><strong>- Thách thức:</strong></mark> biến đổi khí hậu, nước
             biển dâng, xâm nhập mặn, sạt lở bờ biển; hạ tầng nội vùng chưa hoàn
@@ -4083,7 +4309,6 @@
             tàu cá, thu hút đầu tư tư nhân và PPP, phát triển du lịch biển bền
             vững.
           </p>
-
           <p>
             <mark><strong>- Cơ hội du lịch:</strong></mark> bờ biển Sóc Trăng có
             nhiều tiềm năng sinh thái và tâm linh như chùa Dơi, chùa Đất Sét,
@@ -4091,14 +4316,12 @@
             của người Khmer, tạo điều kiện xây dựng các tour du lịch độc đáo,
             thu hút khách trong và ngoài nước.
           </p>
-
           <p>
             Từ đô thị nội địa, Cần Thơ nay trở thành
             <mark><strong>trung tâm kinh tế biển sôi động</strong></mark
             >, cửa ngõ giao thương chiến lược, thúc đẩy sự thịnh vượng của toàn
             vùng Đồng bằng sông Cửu Long và hội nhập quốc tế.
           </p>
-
           <p>
             <mark><strong>- Kết luận:</strong></mark> Với lợi thế
             <u>đường bờ biển hơn 72 km</u>, dự án
@@ -4109,13 +4332,12 @@
             thế của Tây Đô trên bản đồ kinh tế Việt Nam.
           </p>
         </article>
-
         <p style="font-size: 15px" class="w3-center">
           (Nguồn thông tin:
           <a
             href="https://congthuong.vn/can-tho-sau-sap-nhap-dong-luc-phat-trien-moi-tu-kinh-te-bien-386018.html"
             target="_blank"
-            >congthuong.vn</a
+            >Báo Công Thương - Kinh tế biển Cần Thơ</a
           >)
         </p>
       </section>
@@ -4123,10 +4345,5 @@
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        document.getElementById("navMenu").classList.toggle("w3-hide");
-      }
-    </script>
   </body>
 </html>
