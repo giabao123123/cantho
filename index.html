@@ -13,10 +13,7 @@
 <link rel="shortcut icon" href="./Logo/android-chrome-192x192.png" type="image/x-icon">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://giabao123123.github.io/webcon/web%20con.css"
-    />
+    <link rel="stylesheet" href="Style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
@@ -27,23 +24,20 @@
     />
     <style></style>
   </head>
-  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
-    <a href="#hero" class="scroll-top-button">
+  <body class="w3-light-grey">
+    <a href="#" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
     <aside id="backToTop">
-      <a href="#hero" aria-label="Lên đầu trang">
+      <a href="#" aria-label="Lên đầu trang">
         <span class="arrow arrow-1"></span>
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-    <aside class="box w3-right" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với thành phố Cần Thơ!</p>
-    </aside>
     <header class="w3-top">
       <nav
         class="w3-bar w3-white w3-padding w3-card"
-        style="letter-spacing: 4px"
+        aria-label="Thanh điều hướng chính"
       >
         <a href="https://giabao123123.github.io/mienvietnam/" class="w3-bar-item neon-box">Cần Thơ</a>
         <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
@@ -55,10 +49,6 @@
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">☰</label>
         <ul
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fffaf0;
-          "
           class="menu w3-right w3-button"
           id="menu-list"
         >
@@ -82,13 +72,10 @@
           </li>
         </ul>
         <nav
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fff3cd;
-          "
           class="w3-animate-left w3-hide-small neon-box"
+          aria-label="Menu cuộn desktop"
         >
-          <section class="menu-scroll">
+          <div class="menu-scroll" role="list">
             <a href="#about" class="w3-bar-item w3-button"
               >LỊCH SỬ HÌNH THÀNH</a
             >
@@ -117,11 +104,48 @@
               class="w3-bar-item w3-button"
               >TRÒ CHƠI</a
             >
-          </section>
+          </div>
         </nav>
       </nav>
+      <aside
+        class="box w3-right neon-box2"
+        aria-label="Lời chào"
+      >
+        <p class="text">Chào mừng đến với thành phố Cần Thơ!</p>
+      </aside>
     </header>
     <main class="w3-content" style="max-width: 1100px">
+      <section class="hero-vl" aria-label="Giới thiệu thành phố Cần Thơ">
+        <div
+          class="hero-vl-bg"
+          style="background-image: url('https://cdn2.tuoitre.vn/471584752817336320/2025/4/11/base64-17443806900561475777003.jpeg')"
+        ></div>
+        <div class="hero-vl-scrim"></div>
+        <div class="hero-vl-content">
+          <p class="hero-vl-kicker">Đồng Bằng Sông Cửu Long</p>
+          <h1 class="hero-vl-title">Cần Thơ</h1>
+          <p class="hero-vl-sub">
+            Thủ phủ miền Tây — trung tâm kinh tế, văn hoá và khoa học kỹ thuật
+            của vùng Đồng bằng sông Cửu Long, nơi sông Hậu hiền hoà và chợ
+            nổi Cái Răng hội tụ trong lòng đô thị loại I.
+          </p>
+          <div class="hero-vl-stats">
+            <div class="hero-vl-stat">
+              <span>6.360 km²</span>
+              <small>Diện tích</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>4,19 triệu</span>
+              <small>Dân số</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>Đô thị loại I</span>
+              <small>Trực thuộc Trung ương</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-vl-waves"></div>
+      </section>
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <header>
           <h1 class="w3-center" style="color: red; font-size: 35px">
@@ -800,142 +824,142 @@
             {
               name: "Huyện Cờ Đỏ",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/co-do?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/co-do?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Phong Điền",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/phong-dien-can-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/phong-dien-can-tho?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thới Lai",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/thoi-lai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/thoi-lai?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Vĩnh Thạnh",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/vinh-thanh-can-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/vinh-thanh-can-tho?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Thốt Nốt",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/thot-not?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/thot-not?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Bình Thủy",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/binh-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/binh-thuy?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Cái Răng",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/cai-rang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/cai-rang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Ninh Kiều",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/ninh-kieu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/ninh-kieu?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Quận Ô Môn",
               parent: "Tỉnh Cần Thơ cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/o-mon?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/can-tho/o-mon?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Vị Thanh",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Ngã Bảy",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/nga-bay?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/nga-bay?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Long Mỹ",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/tx-long-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/tx-long-my?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Châu Thành	(Hậu Giang cũ)",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-hau-giang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-hau-giang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Châu Thành A	",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-a?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/chau-thanh-a?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Long Mỹ",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/long-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/long-my?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Phụng Hiệp",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/phung-hiep?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/phung-hiep?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Vị Thủy",
               parent: "Tỉnh Hậu Giang cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hau-giang/vi-thuy?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Sóc Trăng",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/soc-trang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/soc-trang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Vĩnh Châu",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/vinh-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/vinh-chau?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Ngã Năm",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/nga-nam?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/nga-nam?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Châu Thành (Sóc Trăng cũ)",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/chau-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"> </iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/chau-thanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"> </iframe>`,
             },
             {
               name: "Huyện Cù Lao Dung",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/cu-lao-dung?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/cu-lao-dung?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Kế Sách",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/ke-sach?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/ke-sach?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Long Phú",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/long-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/long-phu?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mỹ Tú",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-tu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-tu?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mỹ Xuyên",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-xuyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/my-xuyen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thạnh Trị",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/thanh-tri-soc-trang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/thanh-tri-soc-trang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Trần Đề",
               parent: "Tỉnh Sóc Trăng cũ",
-              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/tran-de?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/soc-trang/tran-de?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
           function ttNorm(s) {
@@ -4338,6 +4362,18 @@
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
+    <script src="animations.js"></script>
+    <script>
+      
+      (function () {
+        var btn = document.querySelector('.scroll-top-button');
+        if (!btn) return;
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 320) { btn.classList.add('show'); }
+          else { btn.classList.remove('show'); }
+        }, { passive: true });
+      })();
+    </script>
   </body>
 </html>
 
